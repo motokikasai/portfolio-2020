@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+}
+
+#particles-js {
+  background: rgb(78, 65, 65);
+  height: 100vh;
+}
