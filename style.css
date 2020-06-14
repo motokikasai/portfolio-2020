@@ -1,8 +1,46 @@
 body {
   margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 #particles-js {
-  background: rgb(78, 65, 65);
+  background: rgb(11, 25, 42);
   height: 100vh;
+}
+
+.header-intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  color: white;
+  font-size: 2.5rem;
+}
+
+.container {
+  padding: 120px;
+}
+
+.content-body {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(237, 246, 255);
+}
+
+.content-projects {
+  padding: 80px;
+  background: rgb(255, 188, 134);
+}
+
+.content-contact {
+  padding: 80px;
+  background: rgb(241, 134, 255);
 }
