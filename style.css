@@ -91,7 +91,7 @@ body {
 }
 
 .short-description {
-  background: linear-gradient(to left, #e66465, #4d5394);
+  background: linear-gradient(to left, #64646493, #4d5394b2);
   padding: 5px 36px;
 
   font-family: "Niconne", cursive;
