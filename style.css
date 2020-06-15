@@ -43,9 +43,9 @@ body {
 
 .intro-greeting {
   position: absolute;
-  /* top: 50%; */
+  top: 300px;
   left: 50%;
-  transform: translate(50%, 50%);
+  /* transform: translate3d(50%, 50%, 0); */
   /* height: 100vh; */
 
   display: flex;
