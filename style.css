@@ -6,7 +6,7 @@
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffee07;
-  --green: #28a745;
+  --green: #3cff00;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -180,8 +180,8 @@ body {
 
 .content-about {
   background: rgb(255, 255, 255);
-  color: rgb(44, 44, 44);
-  height: 600px;
+  /* color: rgb(44, 44, 44); */
+  /* height: 600px; */
 
   display: flex;
   flex-direction: column;
@@ -193,10 +193,12 @@ body {
 }
 
 .about-syntax {
+  font-family: Roboto Mono, Courier New, Courier, monospace !important;
+  line-height: 1.5;
   background: rgb(13, 16, 34);
   max-width: 700px;
   margin: 0, auto;
-  /* color: rgb(255, 255, 255); */
+  color: rgb(255, 255, 255);
   padding: 30px;
 }
 
@@ -214,8 +216,27 @@ body {
 }
 
 /* STYLE FOR CODE */
-.comment .dot {
+
+.code-l::after {
+  content: attr("data-line-nr");
+  position: absolute;
+  left: 0px;
+  color: #3b3553;
+  font-family: Roboto Mono, Courier New, Courier, monospace !important;
+  font-size: 16px;
+  line-height: 1.6;
+  z-index: 3;
+  top: 0;
+
+  background: white;
+  width: 30px;
+  height: 30px;
+}
+
+.comment,
+.dot {
   color: rgb(153, 153, 153);
+  display: inline-block;
 }
 
 .methods {
@@ -224,7 +245,23 @@ body {
 }
 .propname {
   color: var(--yellow);
-  margin-left: 6px;
+  /* margin-left: 6px; */
+}
+
+.scope {
+  color: var(--red);
+}
+
+.prop2 {
+  color: var(--teal);
+}
+
+.string {
+  color: var(--green);
+}
+
+.number {
+  color: var(--orange);
 }
 
 .abc {
