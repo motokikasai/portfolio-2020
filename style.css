@@ -28,6 +28,55 @@ body {
   /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
   font-family: "Roboto", sans-serif;
   background: var(--background);
+  /* cursor: none; */
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(107, 52, 102);
+  border-radius: 50%;
+  position: absolute;
+  /* transition-duration: 200ms; */
+  /* transition-timing-function: ease-out; */
+  animation: cursorAnime 0.5s infinite alternate;
+  z-index: 0;
+}
+
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 8px solid gray;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.3;
+  top: -8px;
+  left: -8px;
+  /* transition-duration: 200ms;
+  transition-timing-function: ease-out; */
+  animation: cursorAnime2 0.5s infinite alternate;
+  /* z-index: 5; */
+}
+
+@keyframes cursorAnime {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnime2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
 }
 
 #particles-js {
@@ -207,15 +256,16 @@ body {
 
 .svg-style {
   padding: 0 17px;
+  opacity: 0.5;
+
   transition: 0.2s;
 }
 
 .svg-style:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .intro-name {
-  /* font-family: "Lato", sans-serif; */
   padding-top: 28px;
   padding-bottom: 6px;
   font-size: 2.1rem;
@@ -250,12 +300,12 @@ body {
   /* background: rgb(226, 226, 226); */
 }
 
-.content-contact {
+.content-footer {
   display: flex;
   justify-content: center;
   padding: 5px;
   color: rgb(141, 141, 141);
-  background: rgb(4, 9, 22);
+  /* background: rgb(4, 9, 22); */
 }
 
 /* STYLE FOR CODE */
@@ -309,4 +359,27 @@ body {
 
 .number {
   color: var(--orange);
+}
+
+.blinker {
+  margin-right: 10px;
+}
+
+.blinker::after {
+  content: "";
+  width: 1px;
+  height: 18px;
+  background: white;
+  position: absolute;
+  bottom: 4px;
+  animation: blinkerAnime 0.4s infinite alternate;
+}
+
+@keyframes blinkerAnime {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
