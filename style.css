@@ -162,6 +162,7 @@ body {
 }
 
 .name {
+  font-family: "Montserrat", sans-serif;
   font-size: 4rem;
   /* font-weight: bold; */
 
@@ -177,8 +178,9 @@ body {
   /* background: linear-gradient(to left, #64646493, #4d5394b2); */
   padding: 5px 36px;
 
-  font-family: "Niconne", cursive;
-  font-size: 2.2rem;
+  /* font-family: "Niconne", cursive; */
+  font-family: "Lora", serif;
+  font-size: 1.9rem;
   transition: 0.2s;
 
   animation: slideInDown 0.6s 1s cubic-bezier(0.13, 1.09, 0.46, 1.19);
@@ -187,8 +189,9 @@ body {
 
 .arrow {
   position: absolute;
-  top: 0;
+  top: 4px;
   left: -55px;
+  font-size: 1.4rem;
   /* display: none; */
   visibility: hidden;
   opacity: 0;
@@ -247,6 +250,20 @@ body {
   /* margin: 60px; */
 }
 
+.intro-name {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 28px;
+  padding-bottom: 6px;
+  font-size: 2.1rem;
+}
+
+.intro-snippet {
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
 .social-icons {
   display: flex;
 }
@@ -262,20 +279,8 @@ body {
   opacity: 1;
 }
 
-.intro-name {
-  padding-top: 28px;
-  padding-bottom: 6px;
-  font-size: 2.1rem;
-}
-
 .curly-braces {
   font-size: 2rem;
-}
-
-.intro-snippet {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 32px;
 }
 
 .about-syntax {
