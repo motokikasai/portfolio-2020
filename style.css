@@ -41,7 +41,7 @@ body {
   position: absolute;
   /* transition-duration: 200ms; */
   /* transition-timing-function: ease-out; */
-  animation: cursorAnime 0.5s infinite alternate;
+  animation: cursorAnime 0.9s infinite alternate;
   z-index: 0;
 }
 
@@ -55,10 +55,7 @@ body {
   opacity: 0.3;
   top: -8px;
   left: -8px;
-  /* transition-duration: 200ms;
-  transition-timing-function: ease-out; */
-  animation: cursorAnime2 0.5s infinite alternate;
-  /* z-index: 5; */
+  animation: cursorAnime2 0.9s infinite alternate;
 }
 
 @keyframes cursorAnime {
@@ -381,5 +378,28 @@ body {
   }
   to {
     opacity: 0;
+  }
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 820px) {
+  .content-about {
+    display: block;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .profile-card {
+    /* position: absolute;
+    top: 400px; */
+    max-width: inherit;
+  }
+
+  .about-syntax {
+    margin: 0;
+    margin-top: 300px;
   }
 }
