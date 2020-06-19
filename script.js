@@ -1,6 +1,7 @@
 const cursor = document.querySelector(".cursor");
 
 function cursorMove(e) {
+  // console.count(e);
   cursor.setAttribute(
     "style",
     "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px"
@@ -8,10 +9,3 @@ function cursorMove(e) {
 }
 
 document.addEventListener("mousemove", cursorMove);
-
-// document.addEventListener("mousemove", (e) => {
-//     cursor.setAttribute(
-//       "style",
-//       "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px"
-//     );
-//   });
