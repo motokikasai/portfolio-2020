@@ -290,7 +290,25 @@ body {
 }
 
 .sns-links {
+  position: relative;
   color: rgb(255, 214, 30);
+  text-decoration: none;
+}
+
+.sns-links-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 214, 30);
+  transition-timing-function: cubic-bezier(0.26, 1.57, 0.65, 1.35);
+  transition: 0.1s;
+}
+
+.sns-links-underline:hover::after {
+  width: 100%;
 }
 
 .content-footer {
