@@ -1,5 +1,5 @@
 :root {
-  --background: #0c0918;
+  --background: #06040c;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -30,14 +30,14 @@ body {
   height: 100vh;
 }
 
-.cursor {
+/* .cursor {
   width: 20px;
   height: 20px;
   border: 2px solid rgb(107, 52, 102);
   border-radius: 50%;
   position: absolute;
-  /* transition-duration: 200ms;
-  transition-timing-function: ease-out; */
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
   animation: cursorAnime 0.9s infinite alternate;
   z-index: 0;
 }
@@ -71,11 +71,16 @@ body {
   to {
     transform: scale(0.4);
   }
+} */
+
+.main-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./assets/bg-stary-night.png") center center;
+  background-size: contain;
 }
 
 #particles-js {
   height: 100vh;
-  background: var(--background);
 }
 
 @keyframes slideInUp {
@@ -103,6 +108,12 @@ body {
 .particle-wrapper {
   position: relative;
 }
+
+/* bg tentative */
+/* .container {
+  background: url("./assets/bg-stary-night.png") center center;
+  background-size: contain;
+} */
 
 .icons {
   position: absolute;
@@ -137,7 +148,6 @@ body {
   background: linear-gradient(to right, #2a1d49 0%, #ffabf4 50%, #2a1d49 100%);
   background-size: 400% 400%;
   background-position: 100%;
-  /* background: linear-gradient(to left, #64646493, #4d5394b2); */
   padding: 5px 36px;
 
   font-family: "Lora", serif;
@@ -234,20 +244,41 @@ body {
 .about-syntax {
   font-family: Roboto Mono, Courier New, Courier, monospace !important;
   line-height: 1.5;
-  background: rgba(13, 16, 34, 0.5);
-  max-width: 700px;
-  margin: 0, auto;
+  background: rgba(8, 10, 20, 0.7);
+  max-width: 440px;
   color: rgb(255, 255, 255);
   padding: 30px;
   margin: 40px;
   padding-left: 100px;
 }
 
-.content-projects {
+.content-profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(139, 139, 139, 0.233);
+}
+
+.content-profile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: rgba(83, 30, 255, 0.185);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: skew(0, -10deg);
+}
+
+.profile {
+  font-family: "Lora", serif;
+  color: rgb(226, 226, 226);
+  font-size: 1.4rem;
+
+  /* width: 500px; */
   padding: 80px;
-  color: white;
   line-height: 1.5;
-  /* background: rgb(226, 226, 226); */
 }
 
 .content-footer {
@@ -341,6 +372,12 @@ body {
     display: block;
   }
 
+  .about-syntax {
+    max-width: 100%;
+    margin: 10px;
+    margin-top: 300px;
+  }
+
   .cursor {
     display: none;
   }
@@ -349,11 +386,6 @@ body {
     /* position: absolute;
     top: 400px; */
     max-width: inherit;
-  }
-
-  .about-syntax {
-    margin: 0;
-    margin-top: 300px;
   }
 }
 
