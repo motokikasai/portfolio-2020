@@ -265,11 +265,18 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  background: rgba(83, 30, 255, 0.185);
+  background: rgba(60, 23, 184, 0.185);
   width: 100%;
   height: 100%;
   z-index: -1;
   transform: skew(0, -10deg);
+  transition: 0.2s;
+}
+
+.content-profile:hover::after {
+  background: rgba(17, 129, 204, 0.534);
+
+  transform: skew(0, 7deg);
 }
 
 .profile {
@@ -280,6 +287,10 @@ body {
   /* width: 500px; */
   padding: 80px;
   line-height: 1.5;
+}
+
+.sns-links {
+  color: rgb(255, 214, 30);
 }
 
 .content-footer {
@@ -379,9 +390,9 @@ body {
     margin-top: 300px;
   }
 
-  .cursor {
+  /* .cursor {
     display: none;
-  }
+  } */
 
   .profile-card {
     /* position: absolute;
