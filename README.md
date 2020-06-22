@@ -7,4 +7,4 @@
   <img src="./assets/20200621-portfolio.gif" width="600px">
 </p>
 
-<a href="https://motokikasai.netlify.app/" target="_blank"><h3 align="center">DEMO</h3></a>
+<a href="https://motokikasai.com/" target="_blank"><h3 align="center">DEMO</h3></a>
