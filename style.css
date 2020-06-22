@@ -293,7 +293,7 @@ body {
   color: rgb(226, 226, 226);
   font-size: 1.4rem;
 
-  /* width: 500px; */
+  max-width: 770px;
   padding: 80px;
   line-height: 1.5;
 }
@@ -417,13 +417,7 @@ body {
     margin-top: 300px;
   }
 
-  /* .cursor {
-    display: none;
-  } */
-
   .profile-card {
-    /* position: absolute;
-    top: 400px; */
     max-width: inherit;
   }
 
