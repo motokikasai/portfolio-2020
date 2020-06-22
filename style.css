@@ -417,6 +417,10 @@ body {
     top: 400px; */
     max-width: inherit;
   }
+
+  .profile {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 512px) {
