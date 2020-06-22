@@ -83,6 +83,11 @@ body {
   background-size: contain;
 }
 
+#invite-statement {
+  position: absolute;
+  top: 660px;
+}
+
 #particles-js {
   height: 100vh;
 }
@@ -112,12 +117,6 @@ body {
 .particle-wrapper {
   position: relative;
 }
-
-/* bg tentative */
-/* .container {
-  background: url("./assets/bg-stary-night.png") center center;
-  background-size: contain;
-} */
 
 .icons {
   position: absolute;
