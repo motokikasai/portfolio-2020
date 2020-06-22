@@ -23,6 +23,10 @@
   --dark: #343a40;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -133,6 +137,11 @@ body {
 
   color: white;
   font-size: 2rem;
+}
+
+.header-anchor {
+  color: white;
+  text-decoration: none;
 }
 
 .name {
@@ -258,25 +267,26 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  background: rgba(139, 139, 139, 0.233);
+  background: rgba(8, 10, 20, 0.7);
 }
 
 .content-profile::after {
   content: "";
   position: absolute;
   top: 0;
-  background: rgba(60, 23, 184, 0.185);
+  background: rgba(45, 95, 128, 0.2);
   width: 100%;
   height: 100%;
   z-index: -1;
-  transform: skew(0, -10deg);
-  transition: 0.2s;
+  transform: skew(0, -7deg);
+  transition: 0.2s 0.2s;
+  transition-timing-function: ease-out;
 }
 
 .content-profile:hover::after {
-  background: rgba(17, 129, 204, 0.534);
+  background: rgba(9, 18, 24, 0.6);
 
-  transform: skew(0, 7deg);
+  transform: skew(0, -4deg);
 }
 
 .profile {
