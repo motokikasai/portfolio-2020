@@ -441,4 +441,8 @@ body {
   .short-description {
     font-size: 1.3rem;
   }
+
+  .arrow {
+    top: -2px;
+  }
 }
