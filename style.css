@@ -83,11 +83,6 @@ body {
   background-size: contain;
 }
 
-#invite-statement {
-  position: absolute;
-  top: 560px;
-}
-
 #particles-js {
   height: 100vh;
 }
@@ -407,6 +402,11 @@ body {
 /* MEDIA QUERY */
 
 @media (max-width: 820px) {
+  #invite-statement {
+    position: absolute;
+    top: 480px;
+  }
+
   .content-about {
     display: block;
   }
@@ -424,6 +424,10 @@ body {
   .profile {
     padding: 40px 10px;
   }
+
+  .arrow {
+    top: -2px;
+  }
 }
 
 @media (max-width: 512px) {
@@ -434,9 +438,5 @@ body {
 
   .short-description {
     font-size: 1.3rem;
-  }
-
-  .arrow {
-    top: -2px;
   }
 }
