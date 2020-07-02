@@ -128,7 +128,6 @@ body {
   top: 4px;
   left: -55px;
   font-size: 1.4rem;
-  /* display: none; */
   visibility: hidden;
   opacity: 0;
   transition: 0.1s;
@@ -147,7 +146,6 @@ body {
 }
 
 .short-description:hover .arrow {
-  /* display: inline-block; */
   left: -42px;
   visibility: visible;
   opacity: 1;
@@ -170,7 +168,6 @@ body {
 .profile-img {
   width: 240px;
   border-radius: 50%;
-  /* margin: 60px; */
 }
 
 .intro-name {
@@ -230,7 +227,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  background: rgba(45, 95, 128, 0.2);
+  background: rgba(45, 96, 129, 0.3);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -240,7 +237,7 @@ body {
 }
 
 .content-profile:hover::after {
-  background: rgba(9, 18, 24, 0.6);
+  background: rgba(45, 96, 129, 0.2);
 
   transform: skew(0, 7deg);
 }
@@ -282,10 +279,9 @@ body {
   justify-content: center;
   padding: 5px;
   color: rgb(141, 141, 141);
-  /* background: rgb(4, 9, 22); */
 }
 
-/* STYLE FOR CODE */
+/* FOR INTRO IN "CODE" */
 
 .code-l {
   position: relative;
@@ -319,7 +315,6 @@ body {
 }
 .propname {
   color: var(--yellow);
-  /* margin-left: 6px; */
 }
 
 .scope {
