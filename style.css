@@ -403,8 +403,8 @@ body {
 
 @media (max-width: 820px) {
   #invite-statement {
-    position: absolute;
-    top: 480px;
+    /* position: absolute; */
+    /* top: 480px; */
   }
 
   .content-about {
