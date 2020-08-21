@@ -151,6 +151,24 @@ body {
   opacity: 1;
 }
 
+/* DEMO */
+.demo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.demo-pflanzy {
+  margin: 20px;
+}
+
+.demo-desc {
+  max-width: 300px;
+  margin: 20px;
+  color: white;
+}
+
+/* ABOUT */
+
 .content-about {
   display: flex;
   justify-content: center;
