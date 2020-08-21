@@ -468,7 +468,7 @@ a {
 
 @media (max-width: 880px) {
   #invite-statement {
-    top: 500px;
+    top: 240px;
   }
 
   .content-about {
@@ -505,6 +505,7 @@ a {
 
   .modal-card-gif {
     padding: 0;
+    margin-bottom: 60px;
   }
 
   .demo-modal {
@@ -534,6 +535,6 @@ a {
   }
 
   .modal-card-gif {
-    width: 400px;
+    width: 440px;
   }
 }
