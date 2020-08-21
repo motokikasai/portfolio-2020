@@ -168,13 +168,13 @@ body {
 
 .pflanzy-gif {
   max-width: 340px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
 }
 
 .modal-card-gif {
   max-width: 520px;
-  padding: 20px;
-  /* box-shadow: 0 0 20px rgba(128, 128, 128, 0.7);
-  border-radius: 6px; */
+  border: 4px solid rgba(255, 255, 255, 0.4);
 }
 
 .demo-desc {
@@ -185,10 +185,6 @@ body {
   color: white;
   flex: 1;
 }
-
-/* .left-aligned {
-  text-align: left;
-} */
 
 .demo-modal {
   margin-bottom: 60px;
@@ -223,6 +219,7 @@ h2 {
   display: flex;
   justify-content: flex-end;
   color: gray;
+  height: 26px;
 }
 
 .tech-stack-left-aligned {
@@ -233,6 +230,22 @@ h2 {
 
 .tech-stack-item {
   margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.live-btn {
+  background: #581a45;
+  padding: 0 10px;
+  border-radius: 4px;
+  color: white;
+  transition: 0.2s;
+}
+
+.live-btn:hover {
+  background: #bb1e8c;
 }
 
 /* ABOUT */
