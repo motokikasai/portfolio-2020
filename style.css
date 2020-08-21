@@ -161,10 +161,56 @@ body {
   margin: 20px;
 }
 
+.pflanzy-gif {
+  max-width: 340px;
+}
+
 .demo-desc {
-  max-width: 300px;
+  position: relative;
+  max-width: 500px;
   margin: 20px;
+  text-align: right;
   color: white;
+  flex: 1;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.demo-header-feature {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #ff78ee;
+}
+
+.demo-header-title {
+  font-family: "Montserrat", sans-serif;
+  color: #d8d8d8;
+}
+
+h2 {
+  margin-block-start: 8px;
+}
+
+.short-desc-box {
+  color: #ececec;
+  line-height: 1.6;
+}
+
+.demo-desc-bg {
+  background: rgb(0, 39, 61);
+  padding: 20px;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+}
+
+.tech-stack-item {
+  margin: 0 10px;
 }
 
 /* ABOUT */
@@ -396,9 +442,9 @@ body {
     margin-top: 300px;
   }
 
-  /* .profile-card {
+  .profile-card {
     max-width: inherit;
-  } */
+  }
 
   .profile {
     padding: 40px 10px;
@@ -406,6 +452,13 @@ body {
 
   .arrow {
     top: -5px;
+  }
+
+  .demo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
   }
 }
 
