@@ -188,6 +188,12 @@ body {
 
 .modal-desc {
   max-width: 520px;
+  order: -1;
+  text-align: left;
+}
+
+.tech-stack.left-align {
+  justify-content: flex-start;
 }
 
 .demo-modal {
@@ -222,18 +228,23 @@ h2 {
 .tech-stack {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   color: gray;
   height: 26px;
+  line-height: 1.2;
+  font-size: 0.9rem;
 }
 
-.tech-stack-left-aligned {
+/* .tech-stack-left-aligned {
   display: flex;
   justify-content: flex-start;
   color: gray;
-}
+} */
 
 .tech-stack-item {
   margin: 0 10px;
+  font-family: Roboto Mono, Courier New, Courier, monospace;
+  /* line-height: 1; */
 }
 
 a {
@@ -246,6 +257,7 @@ a {
   border-radius: 4px;
   color: white;
   transition: 0.2s;
+  line-height: 2;
 }
 
 .live-btn:hover {
@@ -512,6 +524,14 @@ a {
 
   .demo-modal {
     margin: 0;
+  }
+
+  .modal-desc {
+    order: 0;
+  }
+
+  .tech-stack {
+    justify-content: flex-start;
   }
 }
 
