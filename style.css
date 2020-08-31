@@ -29,14 +29,14 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: var(--background);
   height: 100vh;
 }
 
 .main-container {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./assets/bg-stary-night.png") center center;
+    url('./assets/bg-stary-night.png') center center;
   background-size: contain;
 }
 
@@ -88,7 +88,7 @@ body {
   right: 0;
   display: -webkit-box;
   display: -webkit-flex;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
 
@@ -102,7 +102,7 @@ body {
 }
 
 .name {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 4rem;
 
   animation: slideInUp 0.6s 1s cubic-bezier(0.13, 1.09, 0.46, 1.19);
@@ -116,7 +116,7 @@ body {
   background-position: 100%;
   padding: 5px 36px;
 
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-size: 1.9rem;
   transition: 0.2s;
 
@@ -202,13 +202,13 @@ body {
 }
 
 .demo-header-feature {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   color: #ff78ee;
 }
 
 .demo-header-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #d8d8d8;
 }
 
@@ -282,14 +282,14 @@ a {
 }
 
 .intro-name {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 28px;
   padding-bottom: 6px;
   font-size: 2.1rem;
 }
 
 .intro-snippet {
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   text-align: center;
   font-size: 18px;
   margin-bottom: 32px;
@@ -340,7 +340,7 @@ a {
 }
 
 .content-salutation::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   background: rgba(45, 96, 129, 0.3);
@@ -359,7 +359,7 @@ a {
 }
 
 .profile {
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   color: rgb(226, 226, 226);
   font-size: 1.4rem;
 
@@ -375,7 +375,7 @@ a {
 }
 
 .sns-links-underline::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -454,7 +454,7 @@ a {
 }
 
 .blinker::after {
-  content: "";
+  content: '';
   width: 1px;
   height: 18px;
   background: white;
@@ -528,7 +528,7 @@ a {
 
 @media (max-width: 582px) {
   .name {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.6rem;
   }
 
