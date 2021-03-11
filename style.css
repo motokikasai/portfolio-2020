@@ -28,6 +28,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background: var(--background);
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .main-container {
