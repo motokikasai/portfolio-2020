@@ -186,7 +186,7 @@ body {
 }
 
 .modal-desc {
-  max-width: 520px;
+  /* max-width: 520px; */
   order: -1;
   text-align: left;
 }
