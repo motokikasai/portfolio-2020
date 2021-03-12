@@ -159,7 +159,7 @@ body {
 .demo-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 140px;
+  /* margin-bottom: 140px; */
 }
 
 .demo-pflanzy {
@@ -184,6 +184,10 @@ body {
   text-align: right;
   color: white;
   flex: 1;
+}
+
+.demo-margin {
+  margin-bottom: 300px;
 }
 
 .modal-desc {
