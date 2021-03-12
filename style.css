@@ -159,7 +159,6 @@ body {
 .demo-container {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 140px; */
 }
 
 .demo-pflanzy {
@@ -187,11 +186,10 @@ body {
 }
 
 .demo-margin {
-  margin-bottom: 300px;
+  margin: 150px 0;
 }
 
 .modal-desc {
-  /* max-width: 520px; */
   order: -1;
   text-align: left;
 }
@@ -242,7 +240,6 @@ h2 {
 .tech-stack-item {
   margin: 0 10px;
   font-family: Roboto Mono, Courier New, Courier, monospace;
-  /* line-height: 1; */
 }
 
 a {
@@ -550,7 +547,15 @@ a {
     left: -34px;
   }
 
+  .demo-modal {
+    margin: 0 20px 0 14px;
+  }
+
   .modal-card-gif {
-    width: 440px;
+    width: 100%;
+  }
+
+  .profile-card {
+    margin: 0;
   }
 }
