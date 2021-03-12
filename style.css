@@ -186,7 +186,7 @@ body {
 }
 
 .demo-margin {
-  margin: 150px 0;
+  margin-bottom: 300px;
 }
 
 .modal-desc {
@@ -549,6 +549,10 @@ a {
 
   .demo-modal {
     margin: 0 20px 0 14px;
+  }
+
+  .demo-margin {
+    margin: 150px 0;
   }
 
   .modal-card-gif {
